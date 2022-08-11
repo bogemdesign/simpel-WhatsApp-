@@ -1,8 +1,9 @@
 let num = document.querySelector('#number')
-let tombol = num.nextElementSibling
+let text = num.nextElementSibling
+let tombol = num.nextElementSibling.nextElementSibling
 tombol.addEventListener('click', function(){
   let number = num.value
-   window.open(`https://wa.me/${number}/?text=hi`)
+   window.open(`https://wa.me/${number}/?text=${text}`)
       location.reload()
       
 })

@@ -1,5 +1,5 @@
 let num = document.querySelector('#number')
-let text = num.nextElementSibling.textContent
+let text = document.querySelector('#text').textContent
 let tombol = num.nextElementSibling.nextElementSibling
 tombol.addEventListener('click', function(){
   let number = num.value
